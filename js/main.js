@@ -1,3 +1,5 @@
+var counter = 0;
+
 document.getElementById("header").style.height = window.innerHeight + "px";
 document.getElementById("book").style.height = window.innerHeight + "px";
 
@@ -6,8 +8,8 @@ function menu(params) {
         var head = document.getElementById("header");
         var menu = document.getElementById("menu");
         menu.src = "images/close.png";
-        menu.style.width = "50%";
-        menu.style.height = "50%";
+        menu.style.width = "100%";
+        menu.style.height = "100%";
         head.style.transitionProperty = "filter";
         head.style.transitionDuration = "250ms";
         head.style.filter = "brightness(40%)";
@@ -19,8 +21,8 @@ function menu(params) {
         var head = document.getElementById("header");
         var menu = document.getElementById("menu");
         menu.src = "images/menu.png";
-        menu.style.width = "50%";
-        menu.style.height = "50%";
+        menu.style.width = "100%";
+        menu.style.height = "100%";
         head.style.transitionProperty = "filter";
         head.style.transitionDuration = "250ms";
         head.style.filter = "brightness(100%)";

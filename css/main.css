@@ -17,6 +17,7 @@ a.btn-white{
     background-color: white;
     border-radius: 1%;
     font-weight: bolder;
+    transition: all 125ms linear;
 }
 a.btn-white:hover{
     transition: all 125ms linear;
@@ -27,6 +28,7 @@ a.btn-yellow{
     background-color: #ffef00;
     border-radius: 1%;
     font-weight: bolder;
+    transition: all 125ms linear;
 }
 a.btn-yellow:hover{
     transition: all 125ms linear;
@@ -39,6 +41,7 @@ a.btn-yellow-outline{
     border-color: #ffef00;
     border-radius: 1%;
     font-weight: bolder;
+    transition: all 125ms linear;
 }
 a.btn-yellow-outline:hover{
     transition: all 125ms linear;
