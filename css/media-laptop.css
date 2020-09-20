@@ -1,0 +1,175 @@
+@media (min-width: 992px) and (max-width: 1400px){
+    /* Header */
+    img#message{
+        margin-top: 3%;
+        width: 30%;
+    }
+    img#lamp{
+        position: relative;
+        bottom: 20px;
+        width: 40%;
+    }
+    img#menu{
+        margin-top: 50%;
+        width: 100%;
+    }
+    img#gear{
+        position: absolute;
+        bottom: 250px;
+        left: 100px;
+        width: 100%;
+    }
+    img#gear:hover{
+        transition: all 125ms linear;
+        transform: rotate(-15deg);
+    }
+    img#date{
+        position: relative;
+        bottom: 125px;
+        left: 50px;
+        width: 100%;
+    }
+    img#title{
+        position: relative;
+        bottom: 250px;
+        width: 60%;
+    }
+    a#get-tickets{
+        position: relative;
+        bottom: 225px;
+    }
+    img#legrand-lamp{
+        position:absolute;
+        bottom: -100px;
+        left: 0;
+    }
+    img#zil{
+        position:absolute;
+        bottom: 125px;
+        right: 0;
+    }
+
+    /* Text block */
+    div#text{
+        margin-bottom: 5%;
+        background-color: white;
+    }
+    #text-img-1{
+        position: relative;
+        bottom: 50px;
+    }
+    #text-img-2{
+        position: relative;
+        bottom: 50px;
+    }
+    #text-img-3{
+        position: relative;
+        bottom: 200px;
+    }
+    #text-img-4{
+        position: relative;
+        bottom: 200px;
+    }
+    #text-img-5{
+        position: relative;
+        bottom: 200px;
+    }
+    #text-img-6{
+        position: relative;
+        bottom: 200px;
+    }
+    img#corona{
+        position: relative;
+        top: 10%;
+        width: 50%;
+        right: 20%;
+    }
+    img#mute{
+        position: relative;
+        bottom: 25%;
+        width: 50%;
+        right: 15%;
+    }
+    img#dollar{
+        position: relative;
+        bottom: 25%;
+        width: 50%;
+        right: 15%;
+    }
+
+    /* Slider */
+    
+    /* Shedule */
+    div#tabs{
+        margin-bottom: 5%;
+    }
+    img#calendar{
+        width: 50%;
+    }
+    a#more{
+        margin-bottom: 5%;
+    }
+
+    /* Gallery */
+    div#gallery{
+        margin-top: 5%;
+        margin-bottom: 5%;
+        background-color: white;
+    }
+    img#camera{
+        width: 50%;
+    }
+
+    /* Book */
+    div#book{
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    p.form_text{
+        position: relative;
+        left: 10%;
+    }
+    input#name{
+        position: relative;
+        left: 9%;
+        padding: 2%;
+        width: 80%;
+    }
+    input#email{
+        position: relative;
+        left: 9%;
+        padding: 2%;
+        width: 80%;
+    }
+    input#phone{
+        position: relative;
+        left: 9%;
+        padding: 2%;
+        width: 80%;
+    }
+    a#book_now{
+        margin-top: 5%;
+        margin-bottom: 5%;
+        padding-top: 1%;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 1%;
+    }
+
+    /* Footer */
+    div#footer{
+        position: relative;
+    }
+    div#second-sponsors{
+        position: relative;
+        bottom: 100px;
+    }
+    p#sponsors-line{
+        position: relative;
+        bottom: 100px;
+    }
+    div#contacts{
+        position: relative;
+        bottom: 100px;
+    }
+}

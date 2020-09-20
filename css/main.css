@@ -1,0 +1,110 @@
+/* All */
+:focus, :active{
+    outline: none;
+}
+.block-title{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-weight: bolder;
+}
+hr{
+    width: 80%;
+    height: 1px;
+    background-color: black;
+}
+a.btn-white{
+    padding: 1% 5% 1% 5%;
+    background-color: white;
+    border-radius: 1%;
+    font-weight: bolder;
+}
+a.btn-white:hover{
+    transition: all 125ms linear;
+    transform: scale(1.1);
+}
+a.btn-yellow{
+    padding: 1% 5% 1% 5%;
+    background-color: #ffef00;
+    border-radius: 1%;
+    font-weight: bolder;
+}
+a.btn-yellow:hover{
+    transition: all 125ms linear;
+    transform: scale(1.1);
+}
+a.btn-yellow-outline{
+    padding: 1% 5% 1% 5%;
+    background-color: white;
+    border-width: 1px;
+    border-color: #ffef00;
+    border-radius: 1%;
+    font-weight: bolder;
+}
+a.btn-yellow-outline:hover{
+    transition: all 125ms linear;
+    transform: scale(1.1);
+}
+
+/* Header */
+header#header{
+    padding-top: 0;
+    padding-right: 3%;
+    padding-bottom: 3%;
+    padding-left: 3%;
+    background-color: #ffef00;
+}
+img#gear{
+    transition: all 125ms linear;
+}
+
+/* Text block */
+div#text{
+    background-color: white;
+}
+
+/* Slider */
+
+/* Shedule */
+div#shedule{
+    background-color: white;
+}
+
+/* Gallery */
+
+
+/* Book */
+div#book{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: #ffef00;
+}
+div#book{
+    background-color: #ffef00;
+}
+input#name{
+    border-width: 0;
+    border-radius: 1%;
+}
+input#email{
+    border-width: 0;
+    border-radius: 1%;
+}
+input#phone{
+    border-width: 0;
+    border-radius: 1%;
+}
+a#book_now{
+    border-radius: 1%;
+    background-color: white;
+    font-weight: bolder;
+}
+a#book_now:hover{
+    border-radius: 1%;
+    background-color: white;
+    font-weight: bolder;
+    transform: scale(1.1)
+}
+
+/* Footer */
