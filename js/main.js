@@ -5,8 +5,6 @@ document.getElementById("header").style.height = window.innerHeight + "px";
 function menu(params) {
     if (counter == 0){
         var menu = document.getElementById("menu");
-        var modal = document.getElementById("modal");
-        var span = document.getElementsByClassName("close_menu")[0];
         var head = document.getElementById("header");
         var menu = document.getElementById("menu");
         menu.src = "images/close.png";
@@ -19,18 +17,6 @@ function menu(params) {
         document.onmousewheel=document.onwheel=function(){ 
             return false;
         };
-        // menu.onclick = function () {
-        //     modal.style.display = "block";
-        // }
-        // span.onclick = function () {
-        //     modal.style.display = "none";
-        // }
-        // window.onclick = function (event) {
-        //     if (event.target == modal) {
-                
-        //     }
-        // }
-        
     }else{
         var modal = document.getElementById("modal");
         var head = document.getElementById("header");
@@ -45,7 +31,6 @@ function menu(params) {
         document.onmousewheel=document.onwheel=function(){ 
             return true;
         };
-        // modal.style.display = "none";
     }
 };
 

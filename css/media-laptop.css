@@ -79,8 +79,8 @@
     }
     img#gear{
         position: relative;
-        bottom: 90%;
-        left: 30%;
+        bottom: 225px;
+        left: 100px;
         width: 100%;
     }
     img#gear:hover{
@@ -89,27 +89,27 @@
     }
     img#date{
         position: relative;
-        bottom: 100%;
-        left: 50%;
+        bottom: 100px;
+        left: 50px;
         width: 100%;
     }
     img#title{
         position: relative;
-        bottom: 100%;
+        bottom: 225px;
         width: 60%;
     }
     a#get-tickets{
         position: relative;
-        bottom: 100%;
+        bottom: 225px;
     }
     img#legrand-lamp{
         position: relative;
-        bottom: 80%;
+        bottom: 225px;
         left: 0;
     }
     img#zil{
         position: relative;
-        bottom: 125px;
+        bottom: 225px;
         right: 0;
     }
 
@@ -120,27 +120,25 @@
     }
     #text-img-1{
         position: relative;
-        bottom: 50px;
     }
     #text-img-2{
         position: relative;
-        bottom: 50px;
     }
     #text-img-3{
         position: relative;
-        bottom: 200px;
+        bottom: 100px;
     }
     #text-img-4{
         position: relative;
-        bottom: 200px;
+        bottom: 100px;
     }
     #text-img-5{
         position: relative;
-        bottom: 200px;
+        bottom: 100px;
     }
     #text-img-6{
         position: relative;
-        bottom: 200px;
+        bottom: 100px;
     }
     img#corona{
         position: relative;
@@ -150,13 +148,13 @@
     }
     img#mute{
         position: relative;
-        bottom: 25%;
+        bottom: 15%;
         width: 50%;
         right: 15%;
     }
     img#dollar{
         position: relative;
-        bottom: 25%;
+        bottom: 15%;
         width: 50%;
         right: 15%;
     }
@@ -169,6 +167,9 @@
     }
     img#calendar{
         width: 50%;
+    }
+    p.time{
+        font-weight: bolder;
     }
     a#more{
         margin-bottom: 5%;
@@ -227,48 +228,10 @@
     /* Footer */
     div#footer{
         margin-top: 5%;
-        margin-bottom: 5%;
         position: relative;
     }
     div#second-sponsors{
         position: relative;
         bottom: 100px;
-    }
-    p#sponsors-line{
-        position: relative;
-        bottom: 100px;
-    }
-    div#contacts{
-        position: relative;
-        bottom: 100px;
-    }
-
-    /* Modal */
-    .modal {
-        display: none;
-        position: absolute;
-        z-index: 1;
-        right: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        overflow: auto;
-        background-color: rgba(0,0,0,0.6);
-        z-index: 1000;
-    }
-    .modal .content {
-        background-color: #fefefe;
-        margin: 15% auto;
-        padding: 20px;
-        border: 1px solid #888;
-        width: 80%;
-        z-index: 99999;
-    }
-    .modal .content .close_menu {
-        color: #aaa;
-        float: right;
-        font-size: 28px;
-        font-weight: bold;
-        cursor: pointer;
     }
 }
