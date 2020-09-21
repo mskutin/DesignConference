@@ -1,15 +1,11 @@
-@media (min-width: 545px) and (max-width: 2000px){
+@media (min-width: 320px) and (max-width: 545px){
     /* All */
-    ::-webkit-scrollbar{
-        width: 0px;
-        background: transparent;
-    }
     :focus, :active{
         outline: none;
     }
     html{
-        -ms-overflow-style: none;
-        scrollbar-width: none;
+        width: 100%;
+        overflow-x: hidden
     }
     hr{
         width: 80%;
@@ -19,12 +15,14 @@
     h2.block-title{
         margin-top: 5%;
         margin-bottom: 5%;
+        font-size: 100%;
         font-weight: bolder;
     }
     a.btn-white{
         padding: 1% 5% 1% 5%;
         background-color: white;
         border-radius: 1%;
+        font-size: 80%;
         font-weight: bolder;
         transition: all 125ms linear;
     }
@@ -35,6 +33,7 @@
     a.btn-yellow{
         padding: 1% 5% 1% 5%;
         background-color: #ffef00;
+        font-size: 80%;
         border-radius: 1%;
         font-weight: bolder;
         transition: all 125ms linear;
@@ -49,6 +48,7 @@
         border-width: 1px;
         border-color: #ffef00;
         border-radius: 1%;
+        font-size: 80%;
         font-weight: bolder;
         transition: all 125ms linear;
     }
@@ -58,6 +58,7 @@
     }
     /* Header */
     header#header{
+        width: 100%;
         padding-top: 0;
         padding-right: 3%;
         padding-bottom: 3%;
@@ -65,98 +66,97 @@
         background-color: #ffef00;
     }
     img#message{
-        margin-top: 3%;
-        width: 30%;
+        display: none;
     }
     img#lamp{
         position: relative;
-        bottom: 20px;
-        width: 40%;
+        bottom: 5px;
+        left: 25%;
+        width: 50%;
     }
     img#menu{
-        margin-top: 50%;
-        width: 100%;
+        position: absolute;
+        bottom: 400%;
+        width: 50px;
     }
     img#gear{
-        position: relative;
-        bottom: 90%;
-        left: 30%;
-        width: 100%;
-    }
-    img#gear:hover{
-        transition: all 125ms linear;
-        transform: rotate(-15deg);
+        display: none;
     }
     img#date{
         position: relative;
-        bottom: 100%;
-        left: 50%;
-        width: 100%;
+        transform: rotate(90deg);
+        text-align: center;
+        left: 40px;
+        width: 50px;
     }
     img#title{
         position: relative;
         bottom: 100%;
+        left: 100px;
         width: 60%;
     }
     a#get-tickets{
         position: relative;
         bottom: 100%;
+        font-size: 50%;
     }
     img#legrand-lamp{
+        src: url("images/legrand.png");
+        width: 100%;
         position: relative;
-        bottom: 80%;
-        left: 0;
+        top: 80px;
+        right: 10px;
     }
     img#zil{
+        width: 50%;
         position: relative;
-        bottom: 125px;
-        right: 0;
+        top: 70px;
+        left: 0;
     }
 
     /* Text block */
     div#text{
+        width: 100%;
         margin-bottom: 5%;
         background-color: white;
+        font-size: 50%;
     }
     #text-img-1{
         position: relative;
-        bottom: 50px;
+        font-size: 100%;
     }
     #text-img-2{
         position: relative;
-        bottom: 50px;
+        font-size: 100%;
     }
     #text-img-3{
         position: relative;
-        bottom: 200px;
+        font-size: 100%;
     }
     #text-img-4{
         position: relative;
-        bottom: 200px;
+        font-size: 100%;
     }
     #text-img-5{
         position: relative;
-        bottom: 200px;
+        font-size: 100%;
     }
     #text-img-6{
         position: relative;
-        bottom: 200px;
+        font-size: 100%;
     }
     img#corona{
         position: relative;
-        top: 10%;
         width: 50%;
         right: 20%;
     }
     img#mute{
         position: relative;
-        bottom: 25%;
         width: 50%;
         right: 15%;
     }
     img#dollar{
         position: relative;
-        bottom: 25%;
         width: 50%;
         right: 15%;
     }
@@ -165,17 +165,47 @@
     
     /* Shedule */
     div#tabs{
+        width: 100%;
         margin-bottom: 5%;
     }
     img#calendar{
         width: 50%;
     }
-    a#more{
+    a.tab{
+        font-size: 50%;
+        margin-top: 5%;
         margin-bottom: 5%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    p.time{
+        position: relative;
+        right: 70px;
+        font-size: 50%;
+    }
+    div#line{
+        width: 100px;
+    }
+    p.speaker{
+        font-size: 50%;
+    }
+    p.speakers-preview{
+        font-size: 50%;
+    }
+    a#more{
+        font-size: 50%;
+        margin-bottom: 5%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        padding-left: 5%;
+        padding-right: 5%;
     }
 
     /* Gallery */
     div#gallery{
+        width: 100%;
         margin-top: 5%;
         margin-bottom: 5%;
         background-color: white;
@@ -183,11 +213,19 @@
     img#camera{
         width: 50%;
     }
+    a.year{
+        font-size: 50%;
+        margin-bottom: 5%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
 
     /* Book */
     div#book{
+        width: 100%;
         margin-top: 5%;
-        margin-bottom: 5%;
         padding-top: 5%;
         padding-bottom: 5%;
         background-color: #ffef00;
@@ -217,7 +255,12 @@
         width: 80%;
     }
     a#book-now{
-        margin: 5%;
+        font-size: 50%;
+        margin-bottom: 5%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        padding-left: 5%;
+        padding-right: 5%;
     }
     p.form_text{
         position: relative;
@@ -226,6 +269,7 @@
 
     /* Footer */
     div#footer{
+        width: 100%;
         margin-top: 5%;
         margin-bottom: 5%;
         position: relative;
@@ -233,6 +277,21 @@
     div#second-sponsors{
         position: relative;
         bottom: 100px;
+    }
+    img#toptal{
+        width: 100%;
+    }
+    img#skillbox{
+        width: 100%;
+    }
+    img#floop{
+        width: 100%;
+    }
+    img#legrand{
+        width: 100%;
+    }
+    img#payu{
+        width: 100%;
     }
     p#sponsors-line{
         position: relative;

@@ -1,13 +1,6 @@
 var counter = 0;
 
 document.getElementById("header").style.height = window.innerHeight + "px";
-document.getElementById("book").style.height = window.innerHeight + "px";
-
-
-
-
-
-
 
 function menu(params) {
     if (counter == 0){
@@ -26,17 +19,17 @@ function menu(params) {
         document.onmousewheel=document.onwheel=function(){ 
             return false;
         };
-        menu.onclick = function () {
-            modal.style.display = "block";
-        }
-        span.onclick = function () {
-            modal.style.display = "none";
-        }
-        window.onclick = function (event) {
-            if (event.target == modal) {
+        // menu.onclick = function () {
+        //     modal.style.display = "block";
+        // }
+        // span.onclick = function () {
+        //     modal.style.display = "none";
+        // }
+        // window.onclick = function (event) {
+        //     if (event.target == modal) {
                 
-            }
-        }
+        //     }
+        // }
         
     }else{
         var modal = document.getElementById("modal");
@@ -52,7 +45,7 @@ function menu(params) {
         document.onmousewheel=document.onwheel=function(){ 
             return true;
         };
-        modal.style.display = "none";
+        // modal.style.display = "none";
     }
 };
 
