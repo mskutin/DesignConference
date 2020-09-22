@@ -1,4 +1,4 @@
-@media screen and (max-width: 1200px) and (handheld){
+@media (min-width: 320px) and (max-width: 1400px) and (min-resolution: 100dpi) and (max-resolution: 500dpi){
     /* All */
     :focus, :active{
         outline: none;
@@ -208,6 +208,10 @@
     }
     img#camera{
         width: 50%;
+    }
+    div#gallery-slider{
+        width: 60%;
+        box-shadow:0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     }
     a.year{
         font-size: 50%;

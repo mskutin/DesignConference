@@ -18,7 +18,6 @@ function menu(params) {
             return false;
         };
     }else{
-        var modal = document.getElementById("modal");
         var head = document.getElementById("header");
         var menu = document.getElementById("menu");
         menu.src = "images/menu.png";
