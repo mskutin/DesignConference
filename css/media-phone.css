@@ -1,11 +1,7 @@
-@media (min-width: 320px) and (max-width: 545px){
+@media screen and (max-width: 1200px) and (handheld){
     /* All */
     :focus, :active{
         outline: none;
-    }
-    html{
-        width: 100%;
-        overflow-x: hidden
     }
     hr{
         width: 80%;
@@ -75,42 +71,42 @@
         width: 50%;
     }
     img#menu{
-        position: absolute;
-        bottom: 400%;
+        position: relative;
+        right: 90vw;
         width: 50px;
     }
     img#gear{
         display: none;
     }
-    img#date{
+    p#date{
         position: relative;
-        transform: rotate(90deg);
-        text-align: center;
+        bottom: 10vh;
         left: 40px;
-        width: 50px;
+        width: 100%;
+        font-size: 100%;
+        font-weight: bolder;
     }
     img#title{
         position: relative;
-        bottom: 100%;
-        left: 100px;
-        width: 60%;
+        bottom: 100px;
+        width: 100%;
     }
     a#get-tickets{
         position: relative;
-        bottom: 100%;
+        bottom: 10vw;
         font-size: 50%;
     }
     img#legrand-lamp{
         src: url("images/legrand.png");
         width: 100%;
         position: relative;
-        top: 80px;
+        top: 50vw;
         right: 10px;
     }
     img#zil{
         width: 50%;
         position: relative;
-        top: 70px;
+        top: 50vw;
         left: 0;
     }
 
@@ -236,7 +232,7 @@
         position: relative;
         left: 9%;
         padding: 5%;
-        width: 200px;
+        width: 100%;
     }
     input#email{
         border-width: 0;
@@ -244,7 +240,7 @@
         position: relative;
         left: 9%;
         padding: 5%;
-        width: 200px;
+        width: 100%;
     }
     input#phone{
         border-width: 0;
@@ -252,7 +248,7 @@
         position: relative;
         left: 9%;
         padding: 5%;
-        width: 200px;
+        width: 100%;
     }
     a#book-now{
         font-size: 50%;
@@ -289,7 +285,7 @@
     img#payu{
         width: 100%;
     }
-    img#footer-link{
-        width: 100%;
+    img.footer-link{
+        width: 50px;
     }
 }

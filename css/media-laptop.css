@@ -58,6 +58,7 @@
     }
     /* Header */
     header#header{
+        width: 100%;
         padding-top: 0;
         padding-right: 3%;
         padding-bottom: 3%;
@@ -87,11 +88,13 @@
         transition: all 125ms linear;
         transform: rotate(-15deg);
     }
-    img#date{
+    p#date{
         position: relative;
-        bottom: 100px;
-        left: 50px;
+        bottom: 80px;
+        left: 40px;
         width: 100%;
+        transform: rotate(-90deg);
+        font-weight: bolder;
     }
     img#title{
         position: relative;
@@ -109,12 +112,14 @@
     }
     img#zil{
         position: relative;
-        bottom: 225px;
+        bottom: 250px;
         right: 0;
     }
 
     /* Text block */
     div#text{
+        width: 100%;
+        max-width: 1280px;
         margin-bottom: 5%;
         background-color: white;
     }
@@ -163,6 +168,8 @@
     
     /* Shedule */
     div#tabs{
+        width: 100%;
+        max-width: 1280px;
         margin-bottom: 5%;
     }
     img#calendar{
@@ -177,6 +184,8 @@
 
     /* Gallery */
     div#gallery{
+        width: 100%;
+        max-width: 1280px;
         margin-top: 5%;
         margin-bottom: 5%;
         background-color: white;
@@ -187,6 +196,7 @@
 
     /* Book */
     div#book{
+        width: 100%;
         margin-top: 5%;
         margin-bottom: 5%;
         padding-top: 5%;
@@ -227,6 +237,8 @@
 
     /* Footer */
     div#footer{
+        width: 100%;
+        max-width: 1280px;
         margin-top: 5%;
         position: relative;
     }
