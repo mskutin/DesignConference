@@ -36,7 +36,7 @@
                     </p>
                 </div>
                 <div class="col-1">
-                    <p id="date" class="text-left">
+                    <p id="date">
                         29 Sept
                     </p>
                 </div>
@@ -92,10 +92,17 @@
         <p class="text-center"><hr></p>
         
         <!--Speakers-->
-        <div class="container">
+        <div id="speakers" class="container">
             <div class="row">
                 <div class="col-12">
                     <h2 class="text-center block-title">SPEAKERS</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p class="text-center">
+                        
+                    </p>
                 </div>
             </div>
         </div>
@@ -183,21 +190,21 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-4" style="vertical-align: middle;">
+                <div class="col-3" style="vertical-align: middle;">
                     <p class="text-center"><a id="year1" class="btn btn-yellow year" onclick=year1()>2020</a></p>
                     <p class="text-center"><a id="year2" class="btn btn-yellow-outline year" onclick=year2()>2019</a></p>
                     <p class="text-center"><a id="year3" class="btn btn-yellow-outline year" onclick=year3()>2018</a></p>
                     <p class="text-center"><a id="year4" class="btn btn-yellow-outline year" onclick=year4()>2017</a></p>
                 </div>
-                <div class="col-8">
+                <div class="col-6">
                     <div class="container">
                         <div class="row">
                             <div class="col-12">
                                 <div id="gallery-slider" class="carousel slide" data-ride="carousel">
                                     <ol class="carousel-indicators">
-                                        <li class="active" data-target="#gallery-slider" data-slide-to="0"></li>
-                                        <li data-target="#gallery-slider" data-slide-to="1"></li>
-                                        <li data-target="#gallery-slider" data-slide-to="2"></li>
+                                        <li class="active gallery-li" data-target="#gallery-slider" data-slide-to="0"></li>
+                                        <li class="gallery-li" data-target="#gallery-slider" data-slide-to="1"></li>
+                                        <li class="gallery-li" data-target="#gallery-slider" data-slide-to="2"></li>
                                     </ol>
                                     <div class="carousel-inner">
                                       <div class="carousel-item active">
@@ -238,19 +245,19 @@
                     <p class="text-center">
                         <table style="border: 0">
                             <tr>
-                                <p class="text-left text-muted form_text"><small><strong>NAME/LAST NAME</strong></small></p>
+                                <p class="text-left text-muted form-text"><small><strong>NAME/LAST NAME</strong></small></p>
                             </tr>
                             <tr>
                                 <p class="text-left"><input id="name" placeholder="Ivan Ivanov"></p>
                             </tr>
                             <tr>
-                                <p class="text-left text-muted form_text"><small><strong>E-MAIL</strong></small></p>
+                                <p class="text-left text-muted form-text"><small><strong>E-MAIL</strong></small></p>
                             </tr>
                             <tr>
                                 <p class="text-left"><input id="email" placeholder="ivanov1990@gmail.com"></p>
                             </tr>
                             <tr>
-                                <p class="text-left text-muted form_text"><small><strong>PHONE NUMBER</strong></small></p>
+                                <p class="text-left text-muted form-text"><small><strong>PHONE NUMBER</strong></small></p>
                             </tr>
                             <tr>
                                 <p class="text-left"><input id="phone" placeholder="+7"></p>
@@ -313,6 +320,45 @@
                         <span><a href=""><img class="footer-link" src="images/telegram.png"></a></span>
                         <span><a href=""><img class="footer-link" src="images/instagram.png"></a></span>
                     </p>
+                </div>
+            </div>
+        </div>
+
+        <!--Modal menu-->
+        <div id="modal-menu" class="container-fluid">
+            <div class="row menu-item">
+                <div class="col-12">
+                    <h2 class="text-center menu-text"><a class="menu-a" href="#text" onclick="link()">ABOUT</a></h2>
+                </div>
+            </div>
+            <hr class="menu-hr">
+            <div class="row menu-item">
+                <div class="col-12">
+                    <h2 class="text-center menu-text"><a class="menu-a" href="#speakers" onclick="link()">SPEAKERS</a></h2>
+                </div>
+            </div>
+            <hr class="menu-hr">
+            <div class="row menu-item">
+                <div class="col-12">
+                    <h2 class="text-center menu-text"><a class="menu-a" href="#shedule" onclick="link()">SHEDULE</a></h2>
+                </div>
+            </div>
+            <hr class="menu-hr">
+            <div class="row menu-item">
+                <div class="col-12">
+                    <h2 class="text-center menu-text"><a class="menu-a" href="#gallery" onclick="link()">GALLERY</a></h2>
+                </div>
+            </div>
+            <hr class="menu-hr">
+            <div class="row menu-item">
+                <div class="col-12">
+                    <h2 class="text-center menu-text"><a class="menu-a" href="#book" onclick="link()">TICKETS</a></h2>
+                </div>
+            </div>
+            <hr class="menu-hr">
+            <div id="final-item" class="row menu-item">
+                <div class="col-12">
+                    <h2 class="text-center menu-text"><a class="menu-a" href="#footer" onclick="link()">PARTHERS</a></h2>
                 </div>
             </div>
         </div>

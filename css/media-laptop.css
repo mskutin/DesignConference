@@ -1,4 +1,4 @@
-@media (min-width: 545px) and (max-width: 2000px){
+@media screen and (min-width: 545px) and (max-width: 1600px){
     /* All */
     ::-webkit-scrollbar{
         width: 0px;
@@ -90,7 +90,7 @@
     }
     p#date{
         position: relative;
-        bottom: 80px;
+        bottom: 50px;
         left: 40px;
         width: 100%;
         transform: rotate(-90deg);
@@ -194,7 +194,7 @@
         width: 40%;
     }
     div#gallery-slider{
-        width: 60%;
+        width: 100%;
         box-shadow:0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     }
 
@@ -249,5 +249,38 @@
     div#second-sponsors{
         position: relative;
         bottom: 100px;
+    }
+
+    /* Modal menu */
+    div#modal-menu{
+        display: none;
+        padding-top: 8%;
+        padding-bottom: 5%;
+        width: 30vw;
+        height: 90vh;
+        background-color: white;
+        position: absolute;
+        top: 0vh;
+        right: 0vw;
+    }
+    hr.menu-hr{
+        margin: 0 10% 0 10%;
+        padding: 0;
+        width: 80%;
+        height: 2px;
+        background-color: #ffef00;
+        border-style: none;
+    }
+    div.menu-item:hover{
+        background-color: #ffef00;
+    }
+    h2.menu-text{
+        width: 100%;
+        padding: 3%;
+        font-weight: bolder;
+    }
+    a.menu-a{
+        color: black;
+        text-decoration-line: none;
     }
 }

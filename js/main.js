@@ -6,10 +6,11 @@ function menu(params) {
     if (counter == 0){
         var menu = document.getElementById("menu");
         var head = document.getElementById("header");
-        var menu = document.getElementById("menu");
+        var modal = document.getElementById("modal-menu")
+        modal.style.display = "block";
+        menu.style.zIndex = "999";
+        modal.style.zIndex = "1";
         menu.src = "images/close.png";
-        menu.style.width = "100%";
-        menu.style.height = "100%";
         head.style.transitionProperty = "filter";
         head.style.transitionDuration = "250ms";
         head.style.filter = "brightness(40%)";
@@ -20,9 +21,11 @@ function menu(params) {
     }else{
         var head = document.getElementById("header");
         var menu = document.getElementById("menu");
+        var modal = document.getElementById("modal-menu")
+        modal.style.display = "none";
+        menu.style.zIndex = "999";
+        modal.style.zIndex = "1";
         menu.src = "images/menu.png";
-        menu.style.width = "100%";
-        menu.style.height = "100%";
         head.style.transitionProperty = "filter";
         head.style.transitionDuration = "250ms";
         head.style.filter = "brightness(100%)";
@@ -32,6 +35,23 @@ function menu(params) {
         };
     }
 };
+
+function link(params) {
+    var head = document.getElementById("header");
+        var menu = document.getElementById("menu");
+        var modal = document.getElementById("modal-menu")
+        modal.style.display = "none";
+        menu.style.zIndex = "999";
+        modal.style.zIndex = "1";
+        menu.src = "images/menu.png";
+        head.style.transitionProperty = "filter";
+        head.style.transitionDuration = "250ms";
+        head.style.filter = "brightness(100%)";
+        counter--;
+        document.onmousewheel=document.onwheel=function(){ 
+            return true;
+    };
+}
 
 function tab1(params) {
     document.getElementById("tab1").style.backgroundColor = "#ffef00";
