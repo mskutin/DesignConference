@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
         <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
         <link rel="stylesheet" href="css/main.css" type="text/css">
         <link rel="stylesheet" href="css/media-laptop.css" type="text/css">
@@ -94,14 +94,39 @@
         <!--Speakers-->
         <div id="speakers" class="container">
             <div class="row">
-                <div class="col-12">
+                <div class="col-4 offset-4">
                     <h2 class="text-center block-title">SPEAKERS</h2>
+                </div>
+                <div class="col-4">
+                    <p class="text-right">
+                        <img id="microphone" src="images/microphone.png">
+                    </p>
                 </div>
             </div>
             <div class="row">
-                <div class="col-12">
+                <div class="col-1">
                     <p class="text-center">
-                        
+                        <img id="left-yellow" class="speakers-arrow" src="images/left_yellow.png" onclick="prev()">
+                    </p>
+                </div>
+                <div class="col-3">
+                    <p class="text-center">
+                        <img id="speaker-1" class="speakers-img" src="images/fillip.png" onclick="fillip()">
+                    </p>
+                </div>
+                <div class="col-3">
+                    <p class="text-center">
+                        <img id="speaker-2" class="speakers-img" src="images/alexandra.png">
+                    </p>
+                </div>
+                <div class="col-3">
+                    <p class="text-center">
+                        <img id="speaker-3" class="speakers-img" src="images/alexey.png">
+                    </p>
+                </div>
+                <div class="col-1">
+                    <p class="text-center">
+                        <img id="right-yellow" class="speakers-arrow" src="images/right_yellow.png" onclick="next()">
                     </p>
                 </div>
             </div>
@@ -137,7 +162,7 @@
                                 <p class="text-center time">10:15-11:15</p>
                             </div>
                             <div class="col-2 line">
-                                <hr style="width: 100%; background-color: #ffef00;">
+                                <hr class="line">
                             </div>
                             <div class="col-6">
                                 <p class="speaker"><strong>FILLIP SOLOMIN</strong></p>
@@ -149,7 +174,7 @@
                                 <p class="text-center time">11:15-12:00</p>
                             </div>
                             <div class="col-2">
-                                <hr style="width: 100%; background-color: #ffef00;">
+                                <hr class="line">
                             </div>
                             <div class="col-6">
                                 <p class="speaker"><strong>ALEXANDRA<br>KONSTANTINOPOLSKAYA</strong></p>
@@ -161,7 +186,7 @@
                                 <p class="text-center time">12:00-12:30</p>
                             </div>
                             <div class="col-2">
-                                <hr style="width: 100%; background-color: #ffef00;">
+                                <hr class="line">
                             </div>
                             <div class="col-6">
                                 <p class="speaker"><strong>ALEXEY PETROV</strong></p>
@@ -360,6 +385,30 @@
                 <div class="col-12">
                     <h2 class="text-center menu-text"><a class="menu-a" href="#footer" onclick="link()">PARTHERS</a></h2>
                 </div>
+            </div>
+        </div>
+
+        <!--Modal Fillip-->
+        <div id="modal-fillip" class="container">
+            <div class="row">
+                <div class="col-1 offset-11">
+                    <img id="modal-fillip-close" src="images/close.png" onclick="modal_fillip_close()">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <img id="fillip" src="images/fillip.png">
+                </div>
+                <div class="col-8">
+
+                </div>
+            </div>
+        </div>
+
+        <div id="my_modal" class="modal">
+            <div class="modal_content">
+                <span class="close_modal_window">×</span>
+                <p>Модальное окно!</p>
             </div>
         </div>
 

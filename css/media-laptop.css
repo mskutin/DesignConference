@@ -1,4 +1,4 @@
-@media screen and (min-width: 545px) and (max-width: 1600px){
+@media screen and (min-width: 546px){
     /* All */
     ::-webkit-scrollbar{
         width: 0px;
@@ -77,12 +77,23 @@
     img#menu{
         margin-top: 50%;
         width: 100%;
+        transition: all 125ms linear;
+        transform: scale(1);
+        z-index: auto;
+    }
+    img#menu:hover{
+        margin-top: 50%;
+        width: 100%;
+        transition: all 125ms linear;
+        transform: scale(1.1);
     }
     img#gear{
         position: relative;
         bottom: 225px;
         left: 100px;
         width: 100%;
+        transition: all 125ms linear;
+        transform: rotate(0deg);
     }
     img#gear:hover{
         transition: all 125ms linear;
@@ -165,6 +176,31 @@
     }
 
     /* Slider */
+    div#slider{
+        width: 100%;
+        max-width: 1280px;
+        margin-bottom: 5%;
+    }
+    img#microphone{
+        width: 50%;
+        transition: all 125ms linear;
+    }
+    img#microphone:hover{
+        transform: rotate(-30deg);
+        transition: all 125ms linear;
+    }
+    img.speakers-img{
+        width: 100%; 
+    }
+    img.speakers-arrow{
+        position: relative;
+        top: 10vh;
+        width: 25vh;
+        transition: all 125ms linear;
+    }
+    img#right-yellow{
+        right: 8vw;
+    }
     
     /* Shedule */
     div#tabs{
@@ -177,6 +213,12 @@
     }
     p.time{
         font-weight: bolder;
+    }
+    hr.line{
+        position: relative;
+        width: 5vw;
+        overflow: visible;
+        background-color: #ffef00;
     }
     a#more{
         margin-bottom: 5%;
@@ -193,6 +235,10 @@
     img#camera{
         width: 40%;
     }
+    a.year{
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+    }
     div#gallery-slider{
         width: 100%;
         box-shadow:0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
@@ -207,27 +253,34 @@
         padding-bottom: 5%;
         background-color: #ffef00;
     }
+    p.form-text{
+        position: relative;
+        left: 3vw;
+    }
     input#name{
+        position: relative;
+        left: 3vw;
         border-width: 0;
         border-radius: 1%;
         position: relative;
-        left: 9%;
         padding: 2%;
         width: 80%;
     }
     input#email{
+        position: relative;
+        left: 3vw;
         border-width: 0;
         border-radius: 1%;
         position: relative;
-        left: 9%;
         padding: 2%;
         width: 80%;
     }
     input#phone{
+        position: relative;
+        left: 3vw;
         border-width: 0;
         border-radius: 1%;
         position: relative;
-        left: 9%;
         padding: 2%;
         width: 80%;
     }
@@ -283,4 +336,37 @@
         color: black;
         text-decoration-line: none;
     }
+
+    /* Modal Fillip */
+    div#modal-fillip{
+        display: none;
+    }
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0,0,0,0.6);
+        z-index: 1000;
+    }
+    .modal .modal_content {
+        background-color: #fefefe;
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+        z-index: 99999;
+    }
+    .modal .modal_content .close_modal_window {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    
 }

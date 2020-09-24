@@ -159,6 +159,28 @@
     }
 
     /* Slider */
+    div#slider{
+        width: 100%;
+        max-width: 1280px;
+        margin-bottom: 5%;
+    }
+    img#microphone{
+        width: 50%;
+        transition: all 125ms linear;
+    }
+    img#microphone:hover{
+        transform: rotate(-30deg);
+        transition: all 125ms linear;
+    }
+    img.speakers-img{
+        width: 100%; 
+    }
+    img.speakers-arrow{
+        position: relative;
+        right: 16vw;
+        width: 20vh;
+        transition: all 125ms linear;
+    }
     
     /* Shedule */
     div#tabs{
@@ -183,9 +205,12 @@
         font-size: 50%;
         font-weight: bolder;
     }
-    div#line{
-        width: 100vw;
+    hr.line{
+        position: relative;
+        right: 10vw;
+        width: 10vw;
         overflow: visible;
+        background-color: #ffef00;
     }
     p.speaker{
         font-size: 50%;
@@ -222,7 +247,8 @@
     }
     a.year{
         font-size: 50%;
-        margin-bottom: 5%;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
         padding-top: 1%;
         padding-bottom: 1%;
         padding-left: 5%;
@@ -305,17 +331,16 @@
     }
 
     /* Modal menu */
-    /* div#modal-menu{
+    div#modal-menu{
         display: none;
-        padding-top: 8%;
-        padding-bottom: 5%;
-        width: 30vw;
-        height: 90vh;
+        padding-top: 20vh;
+        width: 100vw;
+        height: 100vh;
         background-color: white;
         position: absolute;
         top: 0vh;
         right: 0vw;
-    }*/
+    }
     hr.menu-hr{
         margin: 0 10% 0 10%;
         padding: 0;
@@ -335,5 +360,10 @@
     a.menu-a{
         color: black;
         text-decoration-line: none;
+    }
+
+    /* Modal Fillip */
+    div#modal-fillip{
+        display: none;
     }
 }
