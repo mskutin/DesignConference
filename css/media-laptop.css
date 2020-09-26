@@ -7,9 +7,12 @@
     :focus, :active{
         outline: none;
     }
-    html{
+    html, body{
+        position: relative;
+        max-width: 100%;
         -ms-overflow-style: none;
         scrollbar-width: none;
+        overflow-x: hidden;
     }
     hr{
         width: 80%;
@@ -58,6 +61,7 @@
     }
     /* Header */
     header#header{
+        position: relative;
         width: 100%;
         padding-top: 0;
         padding-right: 3%;
@@ -75,11 +79,12 @@
         width: 40%;
     }
     img#menu{
+        position: relative;
         margin-top: 50%;
         width: 100%;
         transition: all 125ms linear;
         transform: scale(1);
-        z-index: auto;
+        z-index: 999;
     }
     img#menu:hover{
         margin-top: 50%;
@@ -306,6 +311,7 @@
 
     /* Modal menu */
     div#modal-menu{
+        position: relative;
         display: none;
         padding-top: 8%;
         padding-bottom: 5%;
@@ -315,13 +321,14 @@
         position: absolute;
         top: 0vh;
         right: 0vw;
+        z-index: 1;
     }
     hr.menu-hr{
         margin: 0 10% 0 10%;
         padding: 0;
         width: 80%;
         height: 2px;
-        background-color: #ffef00;
+        background-color: #ffee00;
         border-style: none;
     }
     div.menu-item:hover{
@@ -340,33 +347,14 @@
     /* Modal Fillip */
     div#modal-fillip{
         display: none;
-    }
-    .modal {
-        display: none;
         position: fixed;
         z-index: 1;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        overflow: auto;
+        left: 15vw;
+        top: 10vh;
+        width: 70vw;
+        height: 50vh;
+        overflow: visible;
         background-color: rgba(0,0,0,0.6);
         z-index: 1000;
     }
-    .modal .modal_content {
-        background-color: #fefefe;
-        margin: 15% auto;
-        padding: 20px;
-        border: 1px solid #888;
-        width: 80%;
-        z-index: 99999;
-    }
-    .modal .modal_content .close_modal_window {
-        color: #aaa;
-        float: right;
-        font-size: 28px;
-        font-weight: bold;
-        cursor: pointer;
-    }
-    
 }

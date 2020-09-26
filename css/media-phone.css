@@ -3,6 +3,13 @@
     :focus, :active{
         outline: none;
     }
+    html, body{
+        position: relative;
+        max-width: 100%;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        overflow-x: hidden;
+    }
     hr{
         width: 80%;
         height: 1px;
