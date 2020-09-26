@@ -2,13 +2,6 @@ var counter = 0;
 
 document.getElementById("header").style.height = window.innerHeight + "px";
 
-window.addEventListener("mousewheel", function(e) {
-    if (e.ctrlKey) {
-        e.preventDefault();
-        return false;
-    }
-});
-
 function menu(params) {
     if (counter == 0){
         var menu = document.getElementById("menu");
@@ -19,9 +12,15 @@ function menu(params) {
         modal.style.zIndex = "1";
         menu.src = "images/close.png";
         modal.style.filter = "brightness(100%)";
-        head.style.transitionProperty = "filter";
-        head.style.transitionDuration = "250ms";
-        head.style.filter = "brightness(40%)";
+        document.getElementById("message").style.transitionProperty = "filter";
+        document.getElementById("message").style.filter = "brightness(60%)";
+        document.getElementById("header-second").style.transitionProperty = "filter";
+        document.getElementById("header-second").style.filter = "brightness(60%)";
+        document.getElementById("header-third").style.transitionProperty = "filter";
+        document.getElementById("header-third").style.filter = "brightness(60%)";
+        document.getElementById("header-four").style.transitionProperty = "filter";
+        document.getElementById("header-four").style.filter = "brightness(60%)";
+        head.style.backgroundColor = "#998f00";
         counter++;
         document.onmousewheel=document.onwheel=function(){ 
             return false;
@@ -33,9 +32,16 @@ function menu(params) {
         modal.style.display = "none";
         menu.style.zIndex = "999";
         menu.src = "images/menu.png";
-        head.style.transitionProperty = "filter";
-        head.style.transitionDuration = "250ms";
-        head.style.filter = "brightness(100%)";
+        modal.style.filter = "brightness(100%)";
+        document.getElementById("message").style.transitionProperty = "filter";
+        document.getElementById("message").style.filter = "brightness(100%)";
+        document.getElementById("header-second").style.transitionProperty = "filter";
+        document.getElementById("header-second").style.filter = "brightness(100%)";
+        document.getElementById("header-third").style.transitionProperty = "filter";
+        document.getElementById("header-third").style.filter = "brightness(100%)";
+        document.getElementById("header-four").style.transitionProperty = "filter";
+        document.getElementById("header-four").style.filter = "brightness(100%)";
+        head.style.backgroundColor = "#ffef00";
         counter--;
         document.onmousewheel=document.onwheel=function(){ 
             return true;
@@ -51,9 +57,16 @@ function link(params) {
         menu.style.zIndex = "999";
         modal.style.zIndex = "1";
         menu.src = "images/menu.png";
-        head.style.transitionProperty = "filter";
-        head.style.transitionDuration = "250ms";
-        head.style.filter = "brightness(100%)";
+        modal.style.filter = "brightness(100%)";
+        document.getElementById("message").style.transitionProperty = "filter";
+        document.getElementById("message").style.filter = "brightness(100%)";
+        document.getElementById("header-second").style.transitionProperty = "filter";
+        document.getElementById("header-second").style.filter = "brightness(100%)";
+        document.getElementById("header-third").style.transitionProperty = "filter";
+        document.getElementById("header-third").style.filter = "brightness(100%)";
+        document.getElementById("header-four").style.transitionProperty = "filter";
+        document.getElementById("header-four").style.filter = "brightness(100%)";
+        head.style.backgroundColor = "#ffef00";
         counter--;
         document.onmousewheel=document.onwheel=function(){ 
             return true;
@@ -69,43 +82,30 @@ function next(params) {
     speaker_3.src = "images/yana.png";
 }
 function prev(params) {
-    var speaker_1 = document.getElementById("speaker-1")
-    var speaker_2 = document.getElementById("speaker-2")
-    var speaker_3 = document.getElementById("speaker-3")
+    var speaker_1 = document.getElementById("speaker-1");
+    var speaker_2 = document.getElementById("speaker-2");
+    var speaker_3 = document.getElementById("speaker-3");
     speaker_1.src = "images/fillip.png";
     speaker_2.src = "images/alexandra.png";
     speaker_3.src = "images/alexey.png";
 }
 
-function fillip(params) {
+function fillip() {
     var modal = document.getElementById("modal-fillip");
-    var btn = document.getElementsByClassName("fillip")
+    var close = document.getElementById("modal-fillip-close");
     var div = document.getElementById("speakers");
-    div.style.transitionProperty = "filter";
-    div.style.transitionDuration = "250ms";
-    div.style.filter = "brightness(40%)";
+    modal.style.display = "block";
     document.onmousewheel=document.onwheel=function(){ 
         return false;
     };
-    btn.onclick = function () {
-       modal.style.display = "block";
-    }
-    window.onclick = function (event) {
-       if (event.target == modal) {
-           modal.style.display = "none";
-       }
-    }
-}
-function modal_fillip_close(params) {
-    var div = document.getElementById("speakers");
-    var modal = document.getElementById("modal-fillip")
-    modal.style.display = "none";
-    div.style.transitionProperty = "filter";
-    div.style.transitionDuration = "250ms";
-    div.style.filter = "brightness(100%)";
-    document.onmousewheel=document.onwheel=function(){ 
-        return true;
-    };
+
+    var close = document.getElementById("modal-fillip-close");
+    close.onclick = function(){
+            modal.style.display = "none";
+            document.onmousewheel=document.onwheel=function(){ 
+                return true;
+            };
+        }
 }
 
 function tab1(params) {

@@ -1,4 +1,4 @@
-@media (min-width: 320px) and (max-width: 545px) {
+@media (max-width: 799px) and (orientation: portrait){
     /* All */
     :focus, :active{
         outline: none;
@@ -363,6 +363,7 @@
         width: 100%;
         padding: 3%;
         font-weight: bolder;
+        font-size: 5vh;
     }
     a.menu-a{
         color: black;
@@ -372,5 +373,28 @@
     /* Modal Fillip */
     div#modal-fillip{
         display: none;
+        position: fixed;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 5%;
+        left: 10vw;
+        top: 10vh;
+        width: 80%;
+        max-width: 1280px;
+        height: 80vh;
+        overflow: visible;
+        background-color: white;
+        z-index: 1000;
+        border-color: #ffef00;
+        border-width: 1px;
+    }
+    img#fillip-img{
+        width: 100%;
+    }
+    div#fillip-text{
+        font-size: 1vh;
+    }
+    h2#fillip-text{
+        font-size: 1vh;
     }
 }

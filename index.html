@@ -4,7 +4,6 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
         <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-        <link rel="stylesheet" href="css/main.css" type="text/css">
         <link rel="stylesheet" href="css/media-laptop.css" type="text/css">
         <link rel="stylesheet" href="css/media-phone.css" type="text/css">
         <title>Design Conference</title>
@@ -12,48 +11,48 @@
     <body>
         <!--Header-->
         <header id="header" class="container-fluid">
-            <div class="row">
-                <div class="col-6">
-                    <p class="text-left">
+            <div id="header-first" class="row">
+                <div class="col-6 d-flex flex-column">
+                    <p class="text-left flex-grow-1">
                         <img id="message" src="images/message.png">
                     </p>
                 </div>
-                <div class="col-5">
-                    <p class="text-right">
+                <div class="col-5 d-flex flex-column">
+                    <p class="text-right flex-grow-1">
                         <img id="lamp" src="images/lamp.png">
                     </p>
                 </div>
-                <div class="col-1">
-                    <p class="text-right">
+                <div class="col-1 d-flex flex-column">
+                    <p class="text-right flex-grow-1">
                         <img id="menu" src="images/menu.png" onclick="menu()">
                     </p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-3">
-                    <p class="text-right">
+            <div id="header-second" class="row">
+                <div class="col-3 d-flex flex-column">
+                    <p class="text-right flex-grow-1">
                         <img id="gear" src="images/gear.png">
                     </p>
                 </div>
-                <div class="col-1">
-                    <p id="date">
+                <div class="col-1 d-flex flex-column">
+                    <p id="date" class="flex-grow-1">
                         29 Sept
                     </p>
                 </div>
-                <div class="col-8">
-                    <p class="text-left">
+                <div class="col-8 d-flex flex-column">
+                    <p class="text-left flex-grow-1">
                         <img id="title" src="images/title.png">
                     </p>    
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12">
-                    <p class="text-center">
+            <div id="header-third" class="row">
+                <div class="col-12 d-flex flex-column">
+                    <p class="text-center flex-grow-1">
                         <a id="get-tickets" class="btn btn-white" href="#book">GET TICKETS</a>
                     </p>
                 </div>
             </div>
-            <div class="row">
+            <div id="header-four" class="row">
                 <div class="col-6">
                     <p class="text-left">
                         <img id="legrand-lamp" src="images/legrand_lamp.png">
@@ -118,7 +117,7 @@
             <div class="row">
                 <div class="col-5 offset-1">
                     <img id="mute" src="images/mute_off.png">
-                    <h4 id="text-img-3" class="text-left"><strong>WHAT ARE DESIGN<br>EXPERTS <span style="background-color: #ffee0080">SILEN ABOUT?</span></strong></h4>
+                    <h4 id="text-img-3" class="text-left"><strong>WHAT ARE DESIGN<br>EXPERTS <span style="background-color: #ffee0080">SILENT ABOUT?</span></strong></h4>
                     <p id="text-img-4" class="text-left">The speakers will share pctical knowl-<br>edge? Features of the approach and se-<br>crets.</p>
                 </div>
                 <div class="col-5 offset-1">
@@ -388,21 +387,29 @@
             </div>
         </div>
 
-        
-
         <!--Modal Fillip-->
         <div id="modal-fillip" class="container">
             <div class="row">
                 <div class="col-1 offset-11">
-                    <img id="modal-fillip-close" src="images/close.png" onclick="modal_fillip_close()">
+                    <img id="modal-fillip-close" src="images/close.png">
                 </div>
             </div>
             <div class="row">
                 <div class="col-4">
-                    <img id="fillip" src="images/fillip.png">
+                    <p class="rounded-circle" style="background-color: #ffee0080; padding: 3%">
+                        <img id="fillip-img" src="images/fillip-modal.png">
+                    </p>
                 </div>
-                <div class="col-8">
-
+                <div id="fillip-text" class="col-8">
+                    <h2 id="fillip-title"><strong>FILLIP SOLOMIN</strong></h2>
+                    <h3><strong>Designer, visualizer, art director in OKTAEDER</strong></h3>
+                    <p>Has been working since 2009. A large part of his work looks at incovering opportunities on what can be made better for user.</p>
+                    <p>Fillip will share the most relevant knowledge in the field of web design and tools for work.<br>Will tell how to property organize the process and create a reference site.</p>
+                    <p class="text-left">
+                        <span><a href=""><img class="footer-link" src="images/telegram.png"></a></span>
+                        <span><a href=""><img class="footer-link" src="images/instagram.png"></a></span>
+                        <span><a href=""><img class="footer-link" src="images/facebook.png"></a></span>
+                    </p>
                 </div>
             </div>
         </div>
