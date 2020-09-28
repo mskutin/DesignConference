@@ -195,23 +195,6 @@
         transform: rotate(-30deg);
         transition: all 125ms linear;
     }
-    img.speakers-img{
-        width: 100%; 
-    }
-    img.speakers-arrow{
-        position: relative;
-        top: 10vh;
-        width: 25vh;
-        transition: all 125ms linear;
-    }
-    img#right-yellow{
-        position: relative;
-        right: 3vw;
-    }
-    img#left-yellow{
-        position: relative;
-        right: 3vw;
-    }
     
     /* Shedule */
     div#tabs{
@@ -380,5 +363,22 @@
     }
     h2#fillip-text{
         font-size: 5vh;
+    }
+}
+
+@keyframes show {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes back {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
     }
 }

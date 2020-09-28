@@ -1,4 +1,5 @@
 var counter = 0;
+var counter_speaker = 0;
 
 document.getElementById("header").style.height = window.innerHeight + "px";
 
@@ -7,6 +8,8 @@ function menu(params) {
         var menu = document.getElementById("menu");
         var head = document.getElementById("header");
         var modal = document.getElementById("modal-menu")
+        modal.style.animation = "show 1s";
+        modal.style.opacity = 1;
         modal.style.display = "block";
         menu.style.zIndex = "999";
         modal.style.zIndex = "1";
@@ -29,8 +32,8 @@ function menu(params) {
         var head = document.getElementById("header");
         var menu = document.getElementById("menu");
         var modal = document.getElementById("modal-menu")
-        modal.style.display = "none";
-        menu.style.zIndex = "999";
+        modal.style.animation = "back 1s";
+        modal.style.opacity = 0;
         menu.src = "images/menu.png";
         modal.style.filter = "brightness(100%)";
         document.getElementById("message").style.transitionProperty = "filter";
@@ -90,16 +93,13 @@ function prev(params) {
     speaker_3.src = "images/alexey.png";
 }
 
-function fillip() {
-    var modal = document.getElementById("modal-fillip");
-    var close = document.getElementById("modal-fillip-close");
-    var div = document.getElementById("speakers");
+function speaker_modal() {
+    var modal = document.getElementById("modal-speaker");
     modal.style.display = "block";
     document.onmousewheel=document.onwheel=function(){ 
         return false;
     };
-
-    var close = document.getElementById("modal-fillip-close");
+    var close = document.getElementsByClassName("modal-close");
     close.onclick = function(){
             modal.style.display = "none";
             document.onmousewheel=document.onwheel=function(){ 
