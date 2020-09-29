@@ -345,13 +345,23 @@
 
     /* Modal Speakers */
     img.modal-img{
+        padding: 3%;
         width: 100%;
+        height: 100%;
+        background-color: #ffee0080;
     }
     div.modal-text{
+        font-size: 1vh;
+    }
+    h2.modal-title{
         font-size: 3vh;
     }
-    h2.modal-text{
-        font-size: 5vh;
+    h3.modal-subtitle{
+        font-size: 2vh;
+    }
+    img.modal-close{
+        margin-top: 5vh;
+        width: 10vh;
     }
     div.modal-speaker{
         display: none;

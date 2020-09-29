@@ -1,10 +1,9 @@
 var counter = 0;
-var counter_speaker = 0;
 
 document.getElementById("header").style.height = window.innerHeight + "px";
 
 // Menu
-function menu(params) {
+function menu() {
     if (counter == 0){
         var menu = document.getElementById("menu");
         var head = document.getElementById("header");
@@ -52,7 +51,7 @@ function menu(params) {
         };
     }
 };
-function link(params) {
+function link() {
     var head = document.getElementById("header");
         var menu = document.getElementById("menu");
         var modal = document.getElementById("modal-menu")
@@ -100,41 +99,82 @@ var slider = tns({
         }
     }
 });
-function close(params) {
-    var modal_fillip = document.getElementsByClassName("modal-fillip-speaker");
-    var modal_alexandra = document.getElementsByClassName("modal-alexandra-speaker");
-    var modal_alexey = document.getElementsByClassName("modal-alexey-speaker");
-    var modal_sergey = document.getElementsByClassName("modal-sergey-speaker");
-    var modal_maria = document.getElementsByClassName("modal-maria-speaker");
-    var modal_yana = document.getElementsByClassName("modal-yana-speaker");
+function close_modal() {
+    var modal_fillip = document.getElementById("modal-fillip-speaker");
+    var modal_alexandra = document.getElementById("modal-alexandra-speaker");
+    var modal_alexey = document.getElementById("modal-alexey-speaker");
+    var modal_sergey = document.getElementById("modal-sergey-speaker");
+    var modal_maria = document.getElementById("modal-maria-speaker");
+    var modal_yana = document.getElementById("modal-yana-speaker");
     modal_fillip.style.display = "none";
     modal_alexandra.style.display = "none";
     modal_alexey.style.display = "none";
     modal_sergey.style.display = "none";
     modal_maria.style.display = "none";
     modal_yana.style.display = "none";
+    document.onmousewheel = document.onwheel = function(){ 
+        return true;
+    };
 }
 function fillip() {
-    var modal = document.getElementsByClassName("modal-fillip-speaker");
+    var modal = document.getElementById("modal-fillip-speaker");
     modal.style.display = "block";
+    document.onmousewheel = document.onwheel = function(){ 
+        return false;
+    };
+}
+function alexandra() {
+    var modal = document.getElementById("modal-alexandra-speaker");
+    modal.style.display = "block";
+    document.onmousewheel = document.onwheel = function(){ 
+        return false;
+    };
+}
+function alexey() {
+    var modal = document.getElementById("modal-alexey-speaker");
+    modal.style.display = "block";
+    document.onmousewheel = document.onwheel = function(){ 
+        return false;
+    };
+}
+function sergey() {
+    var modal = document.getElementById("modal-sergey-speaker");
+    modal.style.display = "block";
+    document.onmousewheel = document.onwheel = function(){ 
+        return false;
+    };
+}
+function maria() {
+    var modal = document.getElementById("modal-maria-speaker");
+    modal.style.display = "block";
+    document.onmousewheel = document.onwheel = function(){ 
+        return false;
+    };
+}
+function yana() {
+    var modal = document.getElementById("modal-yana-speaker");
+    modal.style.display = "block";
+    document.onmousewheel = document.onwheel = function(){ 
+        return false;
+    };
 }
 
 // Shedule
-function tab1(params) {
+function tab1() {
     document.getElementById("tab1").style.backgroundColor = "#ffef00";
     document.getElementById("tab2").style.backgroundColor = "white";
     document.getElementById("tab3").style.backgroundColor = "white";
     document.getElementById("tab2").style.borderColor = "#ffef00";
     document.getElementById("tab3").style.borderColor = "#ffef00";
 };
-function tab2(params) {
+function tab2() {
     document.getElementById("tab1").style.backgroundColor = "white";
     document.getElementById("tab2").style.backgroundColor = "#ffef00";
     document.getElementById("tab3").style.backgroundColor = "white";
     document.getElementById("tab1").style.borderColor = "#ffef00";
     document.getElementById("tab3").style.borderColor = "#ffef00";
 };
-function tab3(params) {
+function tab3() {
     document.getElementById("tab1").style.backgroundColor = "white";
     document.getElementById("tab2").style.backgroundColor = "white";
     document.getElementById("tab3").style.backgroundColor = "#ffef00";
@@ -143,7 +183,7 @@ function tab3(params) {
 };
 
 // Gallery
-function year1(params) {
+function year1() {
     document.getElementById("year1").style.backgroundColor = "#ffef00";
     document.getElementById("year2").style.backgroundColor = "white";
     document.getElementById("year3").style.backgroundColor = "white";
@@ -152,7 +192,7 @@ function year1(params) {
     document.getElementById("year3").style.borderColor = "#ffef00";
     document.getElementById("year4").style.borderColor = "#ffef00";
 };
-function year2(params) {
+function year2() {
     document.getElementById("year2").style.backgroundColor = "#ffef00";
     document.getElementById("year1").style.backgroundColor = "white";
     document.getElementById("year3").style.backgroundColor = "white";
@@ -161,7 +201,7 @@ function year2(params) {
     document.getElementById("year3").style.borderColor = "#ffef00";
     document.getElementById("year4").style.borderColor = "#ffef00";
 };
-function year3(params) {
+function year3() {
     document.getElementById("year3").style.backgroundColor = "#ffef00";
     document.getElementById("year2").style.backgroundColor = "white";
     document.getElementById("year1").style.backgroundColor = "white";
@@ -170,7 +210,7 @@ function year3(params) {
     document.getElementById("year1").style.borderColor = "#ffef00";
     document.getElementById("year4").style.borderColor = "#ffef00";
 };
-function year4(params) {
+function year4() {
     document.getElementById("year4").style.backgroundColor = "#ffef00";
     document.getElementById("year2").style.backgroundColor = "white";
     document.getElementById("year3").style.backgroundColor = "white";
