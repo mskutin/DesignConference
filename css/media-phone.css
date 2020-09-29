@@ -212,6 +212,7 @@
     }
     hr.line{
         position: relative;
+        bottom: 1.2vh;
         right: 10vw;
         width: 10vw;
         overflow: visible;

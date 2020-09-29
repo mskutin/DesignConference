@@ -211,6 +211,7 @@
     }
     hr.line{
         position: relative;
+        bottom: 0.5vh;
         width: 5vw;
         overflow: visible;
         background-color: #ffef00;
