@@ -80,17 +80,44 @@ function next(params) {
     var speaker_1 = document.getElementById("speaker-1");
     var speaker_2 = document.getElementById("speaker-2");
     var speaker_3 = document.getElementById("speaker-3");
+    var sergey_modal = document.getElementsByClassName("modal-sergey-speaker");
+    var maria_modal = document.getElementsByClassName("modal-maria-speaker");
+    var yana_modal = document.getElementsByClassName("modal-yana-speaker");
+    var close = document.getElementsByClassName("modal-close")
     speaker_1.src = "images/sergey.png";
     speaker_2.src = "images/maria.png";
     speaker_3.src = "images/yana.png";
+    counter_speaker++;
+    speaker_1.onclick = function(){
+        sergey_modal.style.display = "block";
+    }
+    speaker_2.onclick = function(){
+        maria_modal.style.display = "block";
+    }
+    speaker_3.onclick = function(){
+        yana_modal.style.display = "block";
+    }
+    // close.onclick = 
 }
 function prev(params) {
     var speaker_1 = document.getElementById("speaker-1");
     var speaker_2 = document.getElementById("speaker-2");
     var speaker_3 = document.getElementById("speaker-3");
+    var fllip_modal = document.getElementsByClassName("modal-fillip-speaker");
+    var alexandra_modal = document.getElementsByClassName("modal-alexandra-speaker");
+    var alexey_modal = document.getElementsByClassName("modal-alexey-speaker");
     speaker_1.src = "images/fillip.png";
     speaker_2.src = "images/alexandra.png";
     speaker_3.src = "images/alexey.png";
+    speaker_1.onclick = function(){
+        sergey_modal.style.display = "block";
+    }
+    speaker_2.onclick = function(){
+        maria_modal.style.display = "block";
+    }
+    speaker_3.onclick = function(){
+        yana_modal.style.display = "block";
+    }
 }
 
 function speaker_modal() {

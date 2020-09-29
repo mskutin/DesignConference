@@ -6,8 +6,6 @@
     html, body{
         position: relative;
         max-width: 100%;
-        -ms-overflow-style: none;
-        scrollbar-width: none;
         overflow-x: hidden;
     }
     hr{
@@ -79,7 +77,8 @@
     }
     img#menu{
         position: relative;
-        bottom: 15vh;
+        top: 5vh;
+        right: 90vw;
         width: 50px;
     }
     img#gear{
@@ -87,7 +86,6 @@
     }
     p#date{
         position: relative;
-        bottom: 10vh;
         left: 15vw;
         width: 100%;
         font-size: 100%;
@@ -95,26 +93,26 @@
     }
     img#title{
         position: relative;
-        bottom: 10vh;
-        left: 20vw;
+        right: 12vw;
+        top: 15vh;
         width: 100%;
     }
     a#get-tickets{
         position: relative;
-        bottom: 10vw;
+        top: 15vh;
         font-size: 50%;
     }
     img#legrand-lamp{
         src: url("../images/legrand.png");
         width: 100%;
         position: relative;
-        top: 20vw;
+        top: 73vw;
         right: 10px;
     }
     img#zil{
         width: 50%;
         position: relative;
-        top: 20vw;
+        top: 70vw;
         left: 0;
     }
 
@@ -370,32 +368,34 @@
         text-decoration-line: none;
     }
 
-    /* Modal Fillip */
-    div#modal-fillip{
+    /* Modal Speakers */
+    img.modal-img{
+        width: 100%;
+    }
+    div.modal-text{
+        font-size: 3vh;
+    }
+    h2.modal-text{
+        font-size: 5vh;
+    }
+    div.modal-speaker{
         display: none;
         position: fixed;
         padding-left: 5%;
         padding-right: 5%;
         padding-bottom: 5%;
         left: 10vw;
+        right: 10vw;
         top: 10vh;
-        width: 80%;
-        max-width: 1280px;
+        bottom: 10vh;
+        width: 80vw;
         height: 80vh;
         overflow: visible;
         background-color: white;
         z-index: 1000;
         border-color: #ffef00;
-        border-width: 1px;
-    }
-    img#fillip-img{
-        width: 100%;
-    }
-    div#fillip-text{
-        font-size: 1vh;
-    }
-    h2#fillip-text{
-        font-size: 1vh;
+        border-style: solid;
+        border-width: 0.5vh;
     }
 }
 

@@ -335,8 +335,17 @@
         text-decoration-line: none;
     }
 
-    /* Modal Fillip */
-    div#modal-fillip{
+    /* Modal Speakers */
+    img.modal-img{
+        width: 100%;
+    }
+    div.modal-text{
+        font-size: 3vh;
+    }
+    h2.modal-text{
+        font-size: 5vh;
+    }
+    div.modal-speaker{
         display: none;
         position: fixed;
         padding-left: 5%;
@@ -354,15 +363,6 @@
         border-color: #ffef00;
         border-style: solid;
         border-width: 0.5vh;
-    }
-    img#fillip-img{
-        width: 100%;
-    }
-    div#fillip-text{
-        font-size: 3vh;
-    }
-    h2#fillip-text{
-        font-size: 5vh;
     }
 }
 
