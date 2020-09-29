@@ -202,6 +202,25 @@
         padding: 2vw;
         width: 30vw;
     }
+    .tns-controls [aria-controls] {
+        padding: 1vw 5vw 1vw 5vw;
+        margin: 1vw;
+        width: 20vw;
+        position: relative;
+        left: 25vw;
+        background-color: #ffef00;
+        border-width: 0;
+        border-radius: 1%;
+        font-weight: bolder;
+        transition: all 125ms linear;
+    }
+    .tns-controls [aria-controls]:focus {
+        outline: none;
+    }
+    .tns-controls [aria-controls]:hover {
+        transition: all 125ms linear;
+        transform: scale(1.1);
+    }
 
     /* Shedule */
     div#tabs{
@@ -350,14 +369,14 @@
         height: 100%;
         background-color: #ffee0080;
     }
-    div.modal-text{
-        font-size: 1vh;
-    }
     h2.modal-title{
-        font-size: 3vh;
+        font-size: 5vh;
     }
     h3.modal-subtitle{
-        font-size: 2vh;
+        font-size: 4vh;
+    }
+    div.modal-text{
+        font-size: 3vh;
     }
     img.modal-close{
         margin-top: 5vh;
