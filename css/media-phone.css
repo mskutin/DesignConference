@@ -177,14 +177,12 @@
         transform: rotate(-30deg);
         transition: all 125ms linear;
     }
-    img.speakers-img{
-        width: 100%; 
+    div#speakers-slider{
+        width: 100%;
     }
-    img.speakers-arrow{
-        position: relative;
-        right: 16vw;
-        width: 20vh;
-        transition: all 125ms linear;
+    img.speaker-img{
+        margin: 5vw;
+        width: 90vw;
     }
     
     /* Shedule */

@@ -195,7 +195,14 @@
         transform: rotate(-30deg);
         transition: all 125ms linear;
     }
-    
+    div#speakers-slider{
+        width: 100%;
+    }
+    img.speaker-img{
+        padding: 2vw;
+        width: 30vw;
+    }
+
     /* Shedule */
     div#tabs{
         width: 100%;

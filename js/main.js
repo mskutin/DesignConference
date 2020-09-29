@@ -3,6 +3,7 @@ var counter_speaker = 0;
 
 document.getElementById("header").style.height = window.innerHeight + "px";
 
+// Menu
 function menu(params) {
     if (counter == 0){
         var menu = document.getElementById("menu");
@@ -51,7 +52,6 @@ function menu(params) {
         };
     }
 };
-
 function link(params) {
     var head = document.getElementById("header");
         var menu = document.getElementById("menu");
@@ -76,65 +76,50 @@ function link(params) {
     };
 }
 
-function next(params) {
-    var speaker_1 = document.getElementById("speaker-1");
-    var speaker_2 = document.getElementById("speaker-2");
-    var speaker_3 = document.getElementById("speaker-3");
-    var sergey_modal = document.getElementsByClassName("modal-sergey-speaker");
-    var maria_modal = document.getElementsByClassName("modal-maria-speaker");
-    var yana_modal = document.getElementsByClassName("modal-yana-speaker");
-    var close = document.getElementsByClassName("modal-close")
-    speaker_1.src = "images/sergey.png";
-    speaker_2.src = "images/maria.png";
-    speaker_3.src = "images/yana.png";
-    counter_speaker++;
-    speaker_1.onclick = function(){
-        sergey_modal.style.display = "block";
-    }
-    speaker_2.onclick = function(){
-        maria_modal.style.display = "block";
-    }
-    speaker_3.onclick = function(){
-        yana_modal.style.display = "block";
-    }
-    // close.onclick = 
-}
-function prev(params) {
-    var speaker_1 = document.getElementById("speaker-1");
-    var speaker_2 = document.getElementById("speaker-2");
-    var speaker_3 = document.getElementById("speaker-3");
-    var fllip_modal = document.getElementsByClassName("modal-fillip-speaker");
-    var alexandra_modal = document.getElementsByClassName("modal-alexandra-speaker");
-    var alexey_modal = document.getElementsByClassName("modal-alexey-speaker");
-    speaker_1.src = "images/fillip.png";
-    speaker_2.src = "images/alexandra.png";
-    speaker_3.src = "images/alexey.png";
-    speaker_1.onclick = function(){
-        sergey_modal.style.display = "block";
-    }
-    speaker_2.onclick = function(){
-        maria_modal.style.display = "block";
-    }
-    speaker_3.onclick = function(){
-        yana_modal.style.display = "block";
-    }
-}
-
-function speaker_modal() {
-    var modal = document.getElementById("modal-speaker");
-    modal.style.display = "block";
-    document.onmousewheel=document.onwheel=function(){ 
-        return false;
-    };
-    var close = document.getElementsByClassName("modal-close");
-    close.onclick = function(){
-            modal.style.display = "none";
-            document.onmousewheel=document.onwheel=function(){ 
-                return true;
-            };
+// Speakers
+var slider = tns({
+    container: ".slider",
+    mode: "carousel",
+    slideBy: "page",
+    nav: false,
+    speed: 500,
+    responsive: {
+        320: {
+            items: 1,
+            gutter: 10,
+            touch: true,
+            mouseDrag: true,
+            controls: false
+        },
+        900: {
+            items: 3,
+            touch: true,
+            gutter: 20,
+            mouseDrag: true,
+            controls: true
         }
+    }
+});
+function close(params) {
+    var modal_fillip = document.getElementsByClassName("modal-fillip-speaker");
+    var modal_alexandra = document.getElementsByClassName("modal-alexandra-speaker");
+    var modal_alexey = document.getElementsByClassName("modal-alexey-speaker");
+    var modal_sergey = document.getElementsByClassName("modal-sergey-speaker");
+    var modal_maria = document.getElementsByClassName("modal-maria-speaker");
+    var modal_yana = document.getElementsByClassName("modal-yana-speaker");
+    modal_fillip.style.display = "none";
+    modal_alexandra.style.display = "none";
+    modal_alexey.style.display = "none";
+    modal_sergey.style.display = "none";
+    modal_maria.style.display = "none";
+    modal_yana.style.display = "none";
+}
+function fillip() {
+    var modal = document.getElementsByClassName("modal-fillip-speaker");
+    modal.style.display = "block";
 }
 
+// Shedule
 function tab1(params) {
     document.getElementById("tab1").style.backgroundColor = "#ffef00";
     document.getElementById("tab2").style.backgroundColor = "white";
@@ -157,6 +142,7 @@ function tab3(params) {
     document.getElementById("tab2").style.borderColor = "#ffef00";
 };
 
+// Gallery
 function year1(params) {
     document.getElementById("year1").style.backgroundColor = "#ffef00";
     document.getElementById("year2").style.backgroundColor = "white";
@@ -193,3 +179,11 @@ function year4(params) {
     document.getElementById("year3").style.borderColor = "#ffef00";
     document.getElementById("year1").style.borderColor = "#ffef00";
 };
+
+var options = {
+    interval: 3000,
+    pause: "hover",
+    wrap: true
+};
+carousel = document.getElementById("#gallery-slider");
+carousel.carousel(options);
